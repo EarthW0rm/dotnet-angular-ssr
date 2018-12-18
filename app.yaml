@@ -13,5 +13,4 @@ resources:
   disk_size_gb: 10
 
 env_variables:
-  # The __ in My__Greeting will be translated to a : by ASP.NET.
-  My__Greeting: Hello AppEngine!
+  ASPNETCORE_ENVIRONMENT : Production
