@@ -62,7 +62,7 @@ namespace dotnet_angular_ssr
 
                 spa.UseSpaPrerendering(options =>
                 {
-                    options.BootModulePath = $"{spa.Options.SourcePath}/dist-server/main.bundle.js";
+                    options.BootModulePath = $"{spa.Options.SourcePath}/dist-server/main.js";
                     options.BootModuleBuilder = env.IsDevelopment()
                         ? new AngularCliBuilder(npmScript: "build:ssr")
                         : null;
